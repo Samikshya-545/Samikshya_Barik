@@ -8,7 +8,7 @@ def home():
     return "Hello, Flask!"
 
 @app.route('/numbers',methods = ['GET'])
-def login():
+def num():
    if request.method == 'GET':
 
         params = request.args.to_dict(flat=False)
